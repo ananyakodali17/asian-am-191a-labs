@@ -1,0 +1,1 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"place":"mong learning center","color":"pink"},"geometry":{"type":"Point","coordinates":[-118.4443438053131,34.06944925014727]}},{"type":"Feature","properties":{"place":"grand canyon","color":"purple"},"geometry":{"type":"Point","coordinates":[-112.093505859375,36.097938036628065]}}]}
