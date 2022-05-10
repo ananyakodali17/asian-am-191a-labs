@@ -29,7 +29,7 @@ function processData(results){
     console.log(results)
     results.data.forEach(data => {
         console.log(data)
-        addMarker(data.lat,data.lng,data['Hometown'],data['why'])
+        addMarker(data.lat,data.lng,data['Location'],data['why'])
     })
 }
 
