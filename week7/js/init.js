@@ -32,18 +32,18 @@ function addMarker(data){
     // these are the names of our lat/long fields in the google sheets:
     if(data['Again'] == "Yes"){
         yesYes.addLayer(L.circleMarker([data.lat,data.lng],
-            {"radius": 14,
+            {"radius": 10,
             "color": "#C66FB3",
-            "weight":10,
+            "weight":5,
             "opacity":500}).addTo(map).
         bindPopup(`<h2>Recommended</h2> <h3>${data.Vacation}</h3> <h4>${data.Why}</h4>`))        
         createButtons(data.lat,data.lng,data['Vacation'])
     }
     else{
         notAgain.addLayer(L.circleMarker([data.lat,data.lng],
-            {"radius": 14,
+            {"radius": 10,
             "color": "#2D3047",
-            "weight":10,
+            "weight":5,
             "opacity":500}).addTo(map).
         bindPopup(`<h2>Not Recommended</h2> <h3>${data.Vacation}</h3> <h4>${data.Why}</h4>`))        
         createButtons(data.lat,data.lng,data['Vacation'])
