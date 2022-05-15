@@ -9,6 +9,7 @@ header{
     grid-area: header;
     justify-self: center;
     align-self: center;
+    text-align: center;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -37,7 +38,7 @@ header{
     grid-area: content;
     display: grid;
     grid-template-rows: 1fr 10fr;
-    grid-template-areas: "buttonHome" "survey"
+    grid-template-areas: "survey" "buttonHome" 
 }
 
 #the_map{

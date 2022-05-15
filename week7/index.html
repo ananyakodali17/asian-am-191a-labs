@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Asian Am 191A Lab Assignment #6</title>
+        <!-- hint: remember to change your page title! -->
+        <meta charset="utf-8" />
+        <link rel="shortcut icon" href="#">
+        <link rel="stylesheet" href="styles/style.css">
+
+        <!-- Leaflet's css-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+        <!-- Leaflet's JavaScript-->
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+        <script src="js/papaparse.min.js"></script>
+       
+    </head>
+
+    <body>
+        <header>
+            <h4>Asian Am 191A</h4>
+            <h1 {text-align: center}>
+                Vacations! </h1>
+                <p>Where have you been on vacation recently? Please share in the
+                    form below and tell us whether you recommend it or not!
+                </p>
+        </header>
+
+        
+        <div class="main">
+            <div id="contents">
+                <div id="placeForButtons"></div>
+                <!-- Be sure to use your own survey here!!!!!!! -->
+                <div id="theSurvey">
+                    <!-- moved the survey out of its iframe and into a button -->
+                    <div id="surveyButton">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeFDa5gRqzNvn-xjvuLCS9PyPmaTiltZDS7p6fxZadyeWbmMg/viewform?embedded=true"> <h4>survey</h4></a>
+                    </div>
+                </div>
+            </div>
+            <div id="the_map"></div>
+        </div>
+        <div id="footer">
+            Copyright(2022)
+        </div>
+        <script src="js/init.js"></script>
+    </body>
+</html>
