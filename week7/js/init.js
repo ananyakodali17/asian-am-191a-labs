@@ -4,12 +4,12 @@ let mapOptions = {'center': [44.0709,-118.444],'zoom':3}
 // declare the map
 const map = L.map('the_map').setView(mapOptions.center, mapOptions.zoom);
 
-let Stadia_AlidadeSmooth = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png', {
-	maxZoom: 20,
-	attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
+let Esri_WorldGrayCanvas = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}', {
+    attribution: 'Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ',
+    maxZoom: 16
 });
 
-Stadia_AlidadeSmooth.addTo(map)
+Esri_WorldGrayCanvas.addTo(map)
 
 let yesYes = L.featureGroup();
 let notAgain = L.featureGroup();
