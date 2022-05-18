@@ -17,7 +17,7 @@ function addMarker(data){
             "color": "#fadadd",
             "weight":10,
             "opacity":500}).addTo(map).
-        bindPopup(`<h2>${data.Location}</h2> <h3>${data.why}</h3>`)
+        bindPopup(`<h2>${data.Vacation}</h2> <h3>${data.Why}</h3>`)
     // adding our create button function
     createButtons(data.lat,data.lng,data.Location)
     return data.Location
