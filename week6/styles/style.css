@@ -38,7 +38,7 @@ header{
     grid-area: content;
     display: grid;
     grid-template-rows: 1fr 10fr;
-    grid-template-areas: "survey" "buttonHome" 
+    grid-template-areas: "buttonHome" "survey"
 }
 
 #the_map{
